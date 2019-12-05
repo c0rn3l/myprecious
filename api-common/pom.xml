@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>api-common</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>${maven.jar.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>myprecious</artifactId>
+    <groupId>ch.myprecious</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+</project>
