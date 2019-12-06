@@ -65,6 +65,7 @@
       <version>${junit.version}</version>
     </dependency>
   </dependencies>
+
   <groupId>ch.myprecious</groupId>
   <modelVersion>4.0.0</modelVersion>
   <modules>
@@ -84,12 +85,12 @@
     <!-- utilities -->
     <maven.compiler.version>3.8.1</maven.compiler.version>
     <maven.jar.version>3.2.0</maven.jar.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- test -->
-    <sl4j.version>1.7.29</sl4j.version>
-    <!-- plugins -->
     <spring.boot.version>2.2.1.RELEASE</spring.boot.version>
     <spring.version>5.2.1.RELEASE</spring.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sl4j.version>1.7.29</sl4j.version>
+    <!-- test -->
+    <swagger.version>1.5.22</swagger.version>
   </properties>
 
   <version>1.0-SNAPSHOT</version>

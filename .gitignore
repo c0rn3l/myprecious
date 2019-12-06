@@ -2,3 +2,4 @@
 /api-password/target/
 /.idea/
 /api-common/target/
+/server-app.log

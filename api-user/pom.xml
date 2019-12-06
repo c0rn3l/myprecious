@@ -27,6 +27,17 @@
       <groupId>ch.myprecious</groupId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <version>${spring.boot.version}</version>
+    </dependency>
+    <!-- utilities -->
+    <dependency>
+      <artifactId>swagger-annotations</artifactId>
+      <groupId>io.swagger</groupId>
+      <version>${swagger.version}</version>
+    </dependency>
     <!--test-->
     <dependency>
       <artifactId>api-common</artifactId>

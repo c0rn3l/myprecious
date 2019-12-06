@@ -1,19 +1,11 @@
 package ch.myprecious.user.IT;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
-import ch.myprecious.common.helper.RestCaller;
 import ch.myprecious.common.helper.RestHelper;
 import ch.myprecious.user.Config;
-import ch.myprecious.user.models.Article;
-import org.junit.Before;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -30,24 +22,24 @@ public class ArticleApiIT {
   private static final String INVALID_ARTICLE_ID = "214748364";
   @Autowired
   public RestHelper restHelper;
-  private RestCaller<Article> articleRestCaller;
-
-  @Before
-  public void setUp() throws Exception {
-    articleRestCaller = restHelper
-        .createGetCaller(Article.class, GET_ARTICLE_URI);
-  }
-
-  @Test
-  public void whenGetArticleReturn404() {
-    Article article = articleRestCaller.execute(HttpStatus.NOT_FOUND, INVALID_ARTICLE_ID);
-    assertNull("Article not null for articleId=" + INVALID_ARTICLE_ID, article);
-  }
-
-  @Test
-  public void whenGetArticleReturnValidArticle() {
-    Article article = articleRestCaller.execute(HttpStatus.OK, VALID_ARTICLE_ID);
-    Article newArticle = new Article("1");
-    assertEquals("Article null for articleId=" + VALID_ARTICLE_ID, newArticle, article);
-  }
+//  private RestCaller<Article> articleRestCaller;
+//
+//  @Before
+//  public void setUp() throws Exception {
+//    articleRestCaller = restHelper
+//        .createGetCaller(Article.class, GET_ARTICLE_URI);
+//  }
+//
+//  @Test
+//  public void whenGetArticleReturn404() {
+//    Article article = articleRestCaller.execute(HttpStatus.NOT_FOUND, INVALID_ARTICLE_ID);
+//    assertNull("Article not null for articleId=" + INVALID_ARTICLE_ID, article);
+//  }
+//
+//  @Test
+//  public void whenGetArticleReturnValidArticle() {
+//    Article article = articleRestCaller.execute(HttpStatus.OK, VALID_ARTICLE_ID);
+//    Article newArticle = new Article("1");
+//    assertEquals("Article null for articleId=" + VALID_ARTICLE_ID, newArticle, article);
+//  }
 }

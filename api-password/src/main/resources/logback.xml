@@ -13,20 +13,20 @@
   </appender>
 
   <logger additivity="false" level="ERROR" name="org.springramework">
-    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
   </logger>
   <logger additivity="false" level="DEBUG" name="ch.myprecious.common">
     <appender-ref ref="STDOUT"/>
     <appender-ref ref="FILE"/>
   </logger>
-  <logger additivity="false" level="DEBUG" name="ch.myprecious.user">
+  <logger additivity="false" level="DEBUG" name="ch.myprecious.password">
     <appender-ref ref="STDOUT"/>
     <appender-ref ref="FILE"/>
   </logger>
   <logger additivity="false" level="ERROR" name="com.h2database">
-    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
   </logger>
   <root level="ERROR">
-    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
   </root>
 </configuration>

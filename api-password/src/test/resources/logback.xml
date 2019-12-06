@@ -19,7 +19,7 @@
     <appender-ref ref="STDOUT"/>
     <appender-ref ref="FILE"/>
   </logger>
-  <logger additivity="false" level="DEBUG" name="ch.myprecious.user">
+  <logger additivity="false" level="DEBUG" name="ch.myprecious.password">
     <appender-ref ref="STDOUT"/>
     <appender-ref ref="FILE"/>
   </logger>
